@@ -22,7 +22,7 @@ headers = {"User-Agent": "Chrome/79"}
 
 print("<b><u>bPOL(Polars Governance Token)(BEP-20)</u></b>")
  
-#extractin data from nomics 
+#extracting data from nomics 
 nomics_data_temp=requests.get(url=nomics,headers=headers)
 nomics_data = nomics_data_temp.json()
 print('Price: $'+'<b><u>'+str('%.4f'%(float(nomics_data[0]['price'])))+'</u></b>')
