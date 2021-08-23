@@ -2,4 +2,4 @@ web3
 requests
 millify
 python-dotenv
-telebot
+pyTelegramBotAPI
