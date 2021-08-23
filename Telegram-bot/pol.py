@@ -23,7 +23,7 @@ print("<b><u>POL(Polars Governance Token)(BEP-20)</u></b>")
 
 dexguru_data_temp=requests.get(url=dexguru,headers=headers)
 dexguru_data = dexguru_data_temp.json()
-print('Price: $'+'<b><u>'+str(millify(dexguru_data['priceUSD'], precision=2))+'</u></b>')
+print('Price: $'+'<b><u>'+str('%.4f'%(dexguru_data['priceUSD']))+'</u></b>')
 print('Liquidity: $'+'<b><u>'+str(millify(dexguru_data['liquidityUSD'], precision=2))+'</u></b>')
 print('Volume 24H: $'+'<b><u>'+str(millify(dexguru_data['volume24hUSD'], precision=2))+'</u></b>')
 
