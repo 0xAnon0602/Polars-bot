@@ -18,7 +18,7 @@ dexguru="https://api.dex.guru/v1/tokens/0xc17fbe1d709ddf6c0b6665dd0591046815ac75
 supply=f"https://api.etherscan.io/api?module=stats&action=tokensupply&contractaddress=0xc17fbe1d709ddf6c0b6665dd0591046815ac7554&apikey={ETHERSCAN_API}"
 headers = {"User-Agent": "Chrome/79"}
 
-print("<b><u>POL(Polars Governance Token)(BEP-20)</u></b>")
+print("<b><u>POL(Polars Governance Token)(ERC-20)</u></b>")
 
 
 dexguru_data_temp=requests.get(url=dexguru,headers=headers)
